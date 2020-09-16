@@ -1,5 +1,5 @@
 <template>
-  <div class="skeleton-1">
+  <div class="skeleton-2">
 
       <div class="long-item"></div>
 
@@ -14,27 +14,24 @@
 
       <div class="card-list">
           <div class="item">
-              <div class="title"></div>
+              <div class="imgag"></div>
               <div class="text"></div>
               <div class="text"></div>
               <div class="text"></div>
           </div>
-          <div class="gap"></div>
           <div class="item">
-              <div class="title"></div>
+              <div class="imgag"></div>
               <div class="text"></div>
               <div class="text"></div>
               <div class="text"></div>
           </div>
-          <div class="gap"></div>
           <div class="item">
-              <div class="title"></div>
+              <div class="imgag"></div>
               <div class="text"></div>
               <div class="text"></div>
           </div>
-        <div class="gap"></div>
           <div class="item">
-              <div class="title"></div>
+              <div class="imgag"></div>
               <div class="text"></div>
               <div class="text"></div>
           </div>
@@ -51,7 +48,7 @@
     animation: swiper 2s infinite;
 }
 
-.skeleton-1 {
+.skeleton-2 {
     width: 375px;
     height: 500px;
     overflow: hidden;
@@ -85,15 +82,22 @@
 .card-list {
     margin-top: 25px;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     .item {
-        display: block;
-        margin: 25px 0;
-        .title {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+        width: 160px;
+        height: 245px;
+        overflow: hidden;
+        .imgag {
             @extend .base-swiper;
-            width: 150px;
-            height: 15px;
+            width: 160px;
+            height: 160px;
             border-radius: 5px;
-            margin-bottom: 18px;
+            margin: 0 auto 10px auto;
         }
         .text {
             @extend .base-swiper;

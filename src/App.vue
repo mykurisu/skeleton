@@ -1,25 +1,38 @@
 <template>
-  <Skeleton1 />
+  <div id="main">
+    <Skeleton1 />
+    <Skeleton2 />
+    <Skeleton3 />
+  </div>
 </template>
 
 <script>
 import Skeleton1 from './components/skeleton-1.vue'
+import Skeleton2 from './components/skeleton-2.vue'
+import Skeleton3 from './components/skeleton-3.vue'
 
 export default {
   name: 'App',
   components: {
-    Skeleton1
+    Skeleton1,
+    Skeleton2,
+    Skeleton3,
   }
 }
 </script>
 
-<style>
+<style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+  min-height: 100vh;
+}
+#main {
+  padding: 30px 0;
+  width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
 }
 </style>
