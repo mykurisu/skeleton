@@ -3,22 +3,25 @@
     <Skeleton1 />
     <Skeleton2 />
     <Skeleton3 />
+    <Skeleton4 />
   </div>
 </template>
 
 <script>
-import Skeleton1 from './components/skeleton-1.vue'
-import Skeleton2 from './components/skeleton-2.vue'
-import Skeleton3 from './components/skeleton-3.vue'
+import Skeleton1 from "./components/skeleton-1.vue";
+import Skeleton2 from "./components/skeleton-2.vue";
+import Skeleton3 from "./components/skeleton-3.vue";
+import Skeleton4 from "./components/skeleton-4.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Skeleton1,
     Skeleton2,
     Skeleton3,
-  }
-}
+    Skeleton4,
+  },
+};
 </script>
 
 <style scoped>
@@ -33,6 +36,7 @@ export default {
   margin: 0 auto;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 </style>

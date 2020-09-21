@@ -50,10 +50,9 @@
 
 .skeleton-2 {
     width: 375px;
-    height: 500px;
+    height: 667px;
     overflow: hidden;
     border: 1px solid #eee;
-    border-radius: 5px;
     padding: 15px;
     box-sizing: border-box;
 }

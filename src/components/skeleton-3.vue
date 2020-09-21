@@ -60,14 +60,14 @@
     top: 0;
     left: 0;
     // background-color: rgb(219, 131, 131);
-    border: 5px solid rgb(219, 131, 131);
+    border: 5px solid rgba(238, 238, 238, 0.5);
     opacity: 0;
     transform: translate(-50%, -50%);
 }
 
 .wave {
   width: 100%;
-  height: 500px;
+  height: 667px;
   position: absolute;
   top: 0;
   left: 0;
@@ -99,11 +99,10 @@
 
 .skeleton-3 {
   width: 375px;
-  height: 500px;
+  height: 667px;
   overflow: hidden;
   position: relative;
   border: 1px solid #eee;
-  border-radius: 5px;
   padding: 15px;
   box-sizing: border-box;
 }
